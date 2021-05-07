@@ -7,7 +7,9 @@
     <link rel="stylesheet" href="{{ asset('css/app.css')}}">
     <title>Home</title>
 </head>
-<body>
-    @include('parts.header')
-</body>
+
+    <body>
+        @include('parts.header')
+    </body>
+
 </html>

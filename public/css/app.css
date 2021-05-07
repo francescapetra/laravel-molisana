@@ -1,3 +1,31 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   background-color: aquamarine;
+}
+
+.red {
+  background-color: red;
+}
+
+.container {
+  width: 100%;
+}
+
+.container_small {
+  margin: auto;
+  width: 80%;
+}
+
+.logo_container {
+  text-align: center;
+  padding: 20px 0;
+}
+.logo_container .logo_nav {
+  margin: auto;
+  width: 200px;
 }

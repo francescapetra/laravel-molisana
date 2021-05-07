@@ -11,8 +11,9 @@
 </head>
 
     <body>
+        {{-- header --}}
         @include('parts.header')
-
+        {{-- header --}}
         <main>
            <section class="lunghe">
                 <div class="container_small">
@@ -24,7 +25,7 @@
                         </div>
                         @endforeach
                     </div>
-            </div>
+                </div>
            </section>
            <section class="lunghe">
                 <div class="container_small">
@@ -36,7 +37,7 @@
                         </div>
                         @endforeach
                     </div>
-            </div>
+                </div>
            </section>
            <section class="lunghe">
                 <div class="container_small">
@@ -48,10 +49,12 @@
                         </div>
                         @endforeach
                     </div>
-            </div>
+                </div>
            </section>
-
         </main>
+        {{-- footer --}}
+        @include('parts.footer')
+        {{-- footer --}}
     </body>
 
 </html>

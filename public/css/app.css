@@ -5,7 +5,6 @@
 }
 
 body {
-  background-color: aquamarine;
   font-family: "Open Sans", sans-serif;
 }
 
@@ -32,7 +31,6 @@ body {
 }
 
 nav {
-  background-color: sandybrown;
   text-align: center;
 }
 nav ul {
@@ -63,4 +61,36 @@ a.link_nav:focus {
   font-size: 22px;
   font-weight: 600;
   padding: 15px;
+}
+
+main {
+  background-image: url("../img/fondo-pag-speciali.jpg");
+  background-repeat: none;
+  background-position: center;
+  background-size: cover;
+  padding-top: 50px;
+}
+
+h2 {
+  text-transform: uppercase;
+  color: #002d73;
+  font-weight: 600;
+  font-size: 30px;
+  margin-left: 10px;
+  padding: 15px 0;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+}
+.cards .card {
+  width: calc((100% / 3) - 20px );
+  margin: 10px;
+  background-color: black;
+}
+.cards .card img {
+  display: block;
+  width: 100%;
+  height: auto;
 }

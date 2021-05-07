@@ -12,6 +12,46 @@
 
     <body>
         @include('parts.header')
+
+        <main>
+           <section class="lunghe">
+                <div class="container_small">
+                    <h2>Le lunghe</h2>
+                    <div class="cards">
+                        @foreach ($lunghe as $pasta)
+                        <div class="card">
+                            <img class="img_card" src="{{$pasta['src']}}" alt="">
+                        </div>
+                        @endforeach
+                    </div>
+            </div>
+           </section>
+           <section class="lunghe">
+                <div class="container_small">
+                    <h2>Le corte</h2>
+                    <div class="cards">
+                        @foreach ($corte as $pasta)
+                        <div class="card">
+                            <img class="img_card" src="{{$pasta['src']}}" alt="">
+                        </div>
+                        @endforeach
+                    </div>
+            </div>
+           </section>
+           <section class="lunghe">
+                <div class="container_small">
+                    <h2>Le cortissime</h2>
+                    <div class="cards">
+                        @foreach ($cortissime as $pasta)
+                        <div class="card">
+                            <img class="img_card" src="{{$pasta['src']}}" alt="">
+                        </div>
+                        @endforeach
+                    </div>
+            </div>
+           </section>
+
+        </main>
     </body>
 
 </html>

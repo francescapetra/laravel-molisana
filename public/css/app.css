@@ -94,3 +94,24 @@ h2 {
   width: 100%;
   height: auto;
 }
+
+.cortissime {
+  padding-bottom: 40px;
+}
+
+footer {
+  height: 850px;
+}
+
+.footer_main {
+  background-color: aqua;
+  height: 700px;
+}
+
+.footer_img {
+  height: 150px;
+}
+.footer_img img {
+  height: 100%;
+  width: 100%;
+}

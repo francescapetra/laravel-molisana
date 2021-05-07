@@ -27,7 +27,7 @@
                     </div>
                 </div>
            </section>
-           <section class="lunghe">
+           <section class="corte">
                 <div class="container_small">
                     <h2>Le corte</h2>
                     <div class="cards">
@@ -39,7 +39,7 @@
                     </div>
                 </div>
            </section>
-           <section class="lunghe">
+           <section class="cortissime">
                 <div class="container_small">
                     <h2>Le cortissime</h2>
                     <div class="cards">

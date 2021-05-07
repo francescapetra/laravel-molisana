@@ -1,8 +1,39 @@
 .logo_container{
     text-align: center;
-    padding: 20px 0;
+    padding: 40px 0;
     .logo_nav{
         margin: auto;
         width: 200px;
     }
+}
+nav{
+background-color:sandybrown;
+text-align: center;
+    ul{
+        display: flex;
+        justify-content: center;
+        list-style: none;
+        li{
+            padding: 15px 1px;
+            .link_nav{
+            background-color: $whi_col;
+            text-decoration: none;
+            color:$bk_col;
+            font-size: $font_22;
+            font-weight: 600;
+            padding: 15px;
+            }  
+        }
+    }
+}
+a.link_nav:focus{
+    background-color: $azul_col;
+}
+.test{
+    background-color: $azul_col;
+    text-decoration: none;
+    color:$bk_col;
+    font-size: $font_22;
+    font-weight: 600;
+    padding: 15px;
 }

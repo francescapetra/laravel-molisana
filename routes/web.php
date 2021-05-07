@@ -14,5 +14,13 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('home');
+    $menu_link = [
+        "Home",
+        "Prodotti",
+        "News"
+    ];
+    return view('home', [
+        "menu_link"=> $menu_link]
+    );
 });
+// "menu_link"=> 

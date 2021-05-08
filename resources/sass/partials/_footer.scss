@@ -1,9 +1,17 @@
 footer{
     height:850px;
+    color: $whi_col;
 }
 .footer_main{
     background-color: aqua;
-    height:700px
+    height:700px;
+    padding : 20px 0;
+    display : flex;
+    .column{
+        width: calc((100% / 3) - 20px );
+        margin: 10px 40px;
+        background-color: pink;
+    }
 }
 .footer_img{
     height:150px;
@@ -11,4 +19,8 @@ footer{
         height:100%;
         width:100%;
     }
+}
+.society{
+    color: $gray_col;
+    font-size:$font_15;
 }

@@ -21,7 +21,6 @@ Route::get('/home', function () {
         "News"
     ];
     
-    
     $data = [
     [
         "src" => "https://www.lamolisana.it/wp-content/uploads/2017/06/4-spaghetto-quadrato-bucato-m.jpg",
@@ -188,10 +187,7 @@ Route::get('/home', function () {
         ], 
     ];
 
-
     return view('home', 
-
-
         [
         "menu_link"=> $menu_link,
         "corte" => $corta,

@@ -1,5 +1,3 @@
-
-
 <footer>
    <div class="footer_main container_small">
         <div class="column">

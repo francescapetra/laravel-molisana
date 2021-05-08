@@ -16,9 +16,7 @@
                     <a class="link_nav" href="">{{$link}}</a>
                 </li> 
                     @endif
-
                @endforeach
-
             </ul>
         </nav>
     </div>

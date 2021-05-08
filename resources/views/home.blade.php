@@ -51,11 +51,6 @@
                     </div>
                 </div>
            </section>
-
-
-
-
-
         </main>
         {{-- footer --}}
         @include('parts.footer')

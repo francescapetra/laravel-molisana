@@ -8,7 +8,12 @@ footer{
     padding : 20px 0;
     display : flex;
     .column{
-        width: calc((100% / 3) - 20px );
+        width: 30%;
+        margin: 10px 40px;
+        background-color: pink;
+    }
+    .column_link{
+        width: 70%;
         margin: 10px 40px;
         background-color: pink;
     }

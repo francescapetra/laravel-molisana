@@ -16,8 +16,11 @@
             <p class="society">numero verde 800818081</p>
             <p class="society"> telefono 38012922455</p>      
         </div>
-        <div class="column"></div>
-        <div class="column"></div>
+        <div class="column_link">
+            {{-- @foreach ($footer_link as $key => $link)
+                <h3>{{$link}}</h3>
+            @endforeach --}}
+        </div>
    </div>
    <div class="footer_img">
        <img src="{{ asset('img/footer-montagne-bottom.jpg') }}" alt="">

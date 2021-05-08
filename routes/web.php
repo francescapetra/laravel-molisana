@@ -14,6 +14,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
+
     $menu_link = [
         "Home",
         "Prodotti",
@@ -143,24 +144,64 @@ Route::get('/', function () {
         "descrizione" => "Altro elemento cult della famiglia de lo Spaghetto Quadrato (N.1 Spaghetto Quadrato. Una new entry che sarà molto apprezzata sia dai consumatori che dagli chef, perché il Ditale Quadrato è un formato deliziosamente piccolo ma sostanzioso.<br>A dispetto del nome che fa pensare ad una pastina è un formato di pasta assolutamente versatile, adatto a moltissime ricette di primi piatti.<br>La sua consistenza soda si sprigiona in bocca con un\'esplosione di emozioni, grazie agli spessori corposi, al colore elegantemente ambrato, alla texture delicatamente ruvida, cangiante e piacevolissima al tatto che trattiene il condimento sulla superficie.<br>Il Ditale Quadrato sembra ideale per preparazioni strutturate come la ricetta con crema di broccoletto siciliano, calamari e pomodori semi secchi profumata al limone e carbone d\'olive nere."
     ]
 ];
-$lunga = [];
-$corta = [];
-$cortissima = [];
 
-foreach ($data as $pasta ) {
-    if ($pasta['tipo'] == 'lunga') {
-        $lunga[] = $pasta;
-    }elseif ($pasta['tipo'] == 'corta') {
-        $corta [] = $pasta;
-    }elseif ($pasta['tipo'] == 'cortissima') {
-        $cortissima [] = $pasta;
-    }
-}
+    $lunga = [];
+    $corta = [];
+    $cortissima = [];
 
-    return view('home', [
-        "menu_link"=> $menu_link],
+
+    foreach ($data as $pasta ) {
+        if ($pasta['tipo'] == 'lunga') {
+            $lunga[] = $pasta;
+        }elseif ($pasta['tipo'] == 'corta') {
+            $corta [] = $pasta;
+        }elseif ($pasta['tipo'] == 'cortissima') {
+            $cortissima [] = $pasta;
+        }
+    };
+
+    $footer_link = [
+
+        "pastificio" => [
+            "Il Pastificio",
+            "Grano decorticato a pietra",
+            "Il Molise c’è",
+            "Filiera Integrata",
+            "100 anni di pasta",
+            "Sartoria della pasta",
+            "Spaghetto Quadrato",
+            "Le Persone",
+         ],
+        "collezione da chef" => [
+            "Collezione da Chef",
+            "Grandi Cucine",
+            "Biologiche",
+            "Quadrate",
+        ],
+        "prodotti" => [
+            "Le Classiche",
+            "Le Integrali",
+            "Le Speciali",
+            "Le Biologiche",
+            "Le Gluten-Free",
+            "Le Semole",
+            "Le Extra di Lusso",
+        ], 
+    ];
+
+
+    return view('home', 
+        [
+            "menu_link"=> $menu_link,
+        ],
         [   "corte" => $corta,
             "lunghe" => $lunga,
             "cortissime" => $cortissima,       
-        ]);
+        ],
+        [
+            "footer_link" => $footer_link,
+            var_dump($footer_link)
+        ] 
+        
+    );
 });

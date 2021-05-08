@@ -1,7 +1,7 @@
 <header>
     <div class="container">
         <div class="logo_container">
-            <img class="logo_nav" src="{{ asset('img/marchio-sito-test.png') }}" alt="logo_molisana">
+            <a href=""><img class="logo_nav" src="{{ asset('img/marchio-sito-test.png') }}" alt="logo_molisana"></a>
         </div>
         <nav class="main_nav">
             <ul class="ul_nav">

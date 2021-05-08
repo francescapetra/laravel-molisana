@@ -21,7 +21,7 @@
                     <div class="cards">
                         @foreach ($lunghe as $pasta)
                         <div class="card">
-                            <img class="img_card" src="{{$pasta['src']}}" alt="">
+                           <a href=""><img class="img_card" src="{{$pasta['src']}}" alt=""></a>
                         </div>
                         @endforeach
                     </div>
@@ -33,7 +33,7 @@
                     <div class="cards">
                         @foreach ($corte as $pasta)
                         <div class="card">
-                            <img class="img_card" src="{{$pasta['src']}}" alt="">
+                            <a href=""><img class="img_card" src="{{$pasta['src']}}" alt=""></a>
                         </div>
                         @endforeach
                     </div>
@@ -45,12 +45,17 @@
                     <div class="cards">
                         @foreach ($cortissime as $pasta)
                         <div class="card">
-                            <img class="img_card" src="{{$pasta['src']}}" alt="">
+                            <a href=""><img class="img_card" src="{{$pasta['src']}}" alt=""></a>
                         </div>
                         @endforeach
                     </div>
                 </div>
            </section>
+
+
+
+
+
         </main>
         {{-- footer --}}
         @include('parts.footer')

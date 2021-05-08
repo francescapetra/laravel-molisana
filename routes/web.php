@@ -13,14 +13,14 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
+Route::get('/home', function () {
 
     $menu_link = [
         "Home",
         "Prodotti",
         "News"
     ];
-
+    
     
     $data = [
     [
@@ -161,8 +161,7 @@ Route::get('/', function () {
     };
 
     $footer_link = [
-
-        "pastificio" => [
+        "Pastificio" => [
             "Il Pastificio",
             "Grano decorticato a pietra",
             "Il Molise c’è",
@@ -171,14 +170,14 @@ Route::get('/', function () {
             "Sartoria della pasta",
             "Spaghetto Quadrato",
             "Le Persone",
-         ],
-        "collezione da chef" => [
+        ],
+        "Collezione da chef" => [
             "Collezione da Chef",
             "Grandi Cucine",
             "Biologiche",
             "Quadrate",
         ],
-        "prodotti" => [
+        "Prodotti" => [
             "Le Classiche",
             "Le Integrali",
             "Le Speciali",
@@ -191,17 +190,16 @@ Route::get('/', function () {
 
 
     return view('home', 
+
+
         [
-            "menu_link"=> $menu_link,
+        "menu_link"=> $menu_link,
+        "corte" => $corta,
+        "lunghe" => $lunga,
+        "cortissime" => $cortissima,       
+        "footer_link" => $footer_link
+        // var_dump($footer_link)
         ],
-        [   "corte" => $corta,
-            "lunghe" => $lunga,
-            "cortissime" => $cortissima,       
-        ],
-        [
-            "footer_link" => $footer_link,
-            var_dump($footer_link)
-        ] 
-        
+       
     );
 });

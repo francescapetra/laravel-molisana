@@ -57,7 +57,7 @@ a.link_nav:focus {
   background-color: #b2e5fc;
 }
 
-main {
+.wrapper {
   background-image: url("../img/fondo-pag-speciali.jpg");
   background-repeat: none;
   background-position: center;

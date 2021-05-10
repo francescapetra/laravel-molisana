@@ -197,7 +197,7 @@ Route::get('/home', function () {
         // var_dump($footer_link)
         ], 
     );
-});
+})->name('homepage');
 
 Route::get('/prodotti', function(){
     $footer_link = [
@@ -232,7 +232,7 @@ Route::get('/prodotti', function(){
         "footer_link" => $footer_link
         ]
     );
-});
+})->name('tutti i prodotti');
 
 Route::get('/news', function(){
     $footer_link = [
@@ -267,4 +267,4 @@ Route::get('/news', function(){
         "footer_link" => $footer_link
         ]
     );
-});
+})->name('le news');;

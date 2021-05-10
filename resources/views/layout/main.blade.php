@@ -23,5 +23,7 @@
         @include('parts.footer')
         {{-- footer --}}
     </body>
+
     @yield('js')
+    
 </html>

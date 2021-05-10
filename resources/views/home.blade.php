@@ -6,7 +6,8 @@
 
 @section('content')
 
-<section class="lunghe">
+<div class="wrapper">
+    <section class="lunghe">
     <div class="container_small">
         <h2>Le lunghe</h2>
         <div class="cards">
@@ -42,5 +43,6 @@
         </div>
     </div>
 </section>
+</div>
 
 @endsection

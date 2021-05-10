@@ -195,7 +195,76 @@ Route::get('/home', function () {
         "cortissime" => $cortissima,       
         "footer_link" => $footer_link
         // var_dump($footer_link)
+        ], 
+    );
+});
+
+Route::get('/prodotti', function(){
+    $footer_link = [
+        "Pastificio" => [
+            "Il Pastificio",
+            "Grano decorticato a pietra",
+            "Il Molise c’è",
+            "Filiera Integrata",
+            "100 anni di pasta",
+            "Sartoria della pasta",
+            "Spaghetto Quadrato",
+            "Le Persone",
         ],
-       
+        "Collezione da chef" => [
+            "Collezione da Chef",
+            "Grandi Cucine",
+            "Biologiche",
+            "Quadrate",
+        ],
+        "Prodotti" => [
+            "Le Classiche",
+            "Le Integrali",
+            "Le Speciali",
+            "Le Biologiche",
+            "Le Gluten-Free",
+            "Le Semole",
+            "Le Extra di Lusso",
+        ], 
+    ];
+    return view('prodotti',
+        [
+        "footer_link" => $footer_link
+        ]
+    );
+});
+
+Route::get('/news', function(){
+    $footer_link = [
+        "Pastificio" => [
+            "Il Pastificio",
+            "Grano decorticato a pietra",
+            "Il Molise c’è",
+            "Filiera Integrata",
+            "100 anni di pasta",
+            "Sartoria della pasta",
+            "Spaghetto Quadrato",
+            "Le Persone",
+        ],
+        "Collezione da chef" => [
+            "Collezione da Chef",
+            "Grandi Cucine",
+            "Biologiche",
+            "Quadrate",
+        ],
+        "Prodotti" => [
+            "Le Classiche",
+            "Le Integrali",
+            "Le Speciali",
+            "Le Biologiche",
+            "Le Gluten-Free",
+            "Le Semole",
+            "Le Extra di Lusso",
+        ], 
+    ];
+    return view('news',
+         [
+        "footer_link" => $footer_link
+        ]
     );
 });

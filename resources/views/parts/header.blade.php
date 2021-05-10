@@ -10,13 +10,13 @@
                 {{-- loop per first element --}}
                    {{-- @if ($loop -> first) --}}
                     <li class=" li_nav">
-                      <a class="link_nav active" href="">Home</a> 
+                      <a class="link_nav active" href="/home">Home</a> 
                     </li> 
                     <li class="li_nav">
-                      <a class="link_nav" href="">Prodotti</a> 
+                      <a class="link_nav" href="/prodotti">Prodotti</a> 
                     </li> 
                      <li class="li_nav">
-                      <a class="link_nav " href="">News</a> 
+                      <a class="link_nav " href="/news">News</a> 
                     </li>  
                     {{-- @else
                     <li class="li_nav">

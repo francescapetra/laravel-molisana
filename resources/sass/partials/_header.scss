@@ -21,18 +21,13 @@ text-align: center;
             font-size: $font_22;
             font-weight: 600;
             padding: 15px;
-            }  
+            } 
+             .active{
+                background-color: $azul_col;
+            }
         }
     }
 }
 a.link_nav:focus{
     background-color: $azul_col;
-}
-.test{
-    background-color: $azul_col;
-    text-decoration: none;
-    color:$bk_col;
-    font-size: $font_22;
-    font-weight: 600;
-    padding: 15px;
 }

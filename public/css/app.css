@@ -49,18 +49,12 @@ nav ul li .link_nav {
   font-weight: 600;
   padding: 15px;
 }
-
-a.link_nav:focus {
+nav ul li .active {
   background-color: #b2e5fc;
 }
 
-.test {
+a.link_nav:focus {
   background-color: #b2e5fc;
-  text-decoration: none;
-  color: #000;
-  font-size: 22px;
-  font-weight: 600;
-  padding: 15px;
 }
 
 main {

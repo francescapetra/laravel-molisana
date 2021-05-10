@@ -6,17 +6,24 @@
         <nav class="main_nav">
             <ul class="ul_nav">
                 {{-- ciclo su aray --}}
-               @foreach ($menu_link as $link)
+               {{-- @foreach ($menu_link as $link) --}}
                 {{-- loop per first element --}}
-                   @if ($loop -> first)
+                   {{-- @if ($loop -> first) --}}
+                    <li class=" li_nav">
+                      <a class="link_nav active" href="">Home</a> 
+                    </li> 
                     <li class="li_nav">
-                      <a class=" test" href="">{{$link}}</a> </li> 
-                    @else
+                      <a class="link_nav" href="">Prodotti</a> 
+                    </li> 
+                     <li class="li_nav">
+                      <a class="link_nav " href="">News</a> 
+                    </li>  
+                    {{-- @else
                     <li class="li_nav">
                     <a class="link_nav" href="">{{$link}}</a>
                 </li> 
                     @endif
-               @endforeach
+               @endforeach --}}
             </ul>
         </nav>
     </div>

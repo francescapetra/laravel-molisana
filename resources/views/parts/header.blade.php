@@ -10,13 +10,13 @@
                 {{-- loop per first element --}}
                    {{-- @if ($loop -> first) --}}
                     <li class=" li_nav">
-                      <a class="link_nav active" href="/home">Home</a> 
+                      <a class="link_nav active" href={{route('homepage')}}>Home</a> 
                     </li> 
                     <li class="li_nav">
-                      <a class="link_nav" href="/prodotti">Prodotti</a> 
+                      <a class="link_nav" href={{route('i_prodotti')}}>Prodotti</a> 
                     </li> 
                      <li class="li_nav">
-                      <a class="link_nav " href="/news">News</a> 
+                      <a class="link_nav " href={{route('le_news')}}>News</a> 
                     </li>  
                     {{-- @else
                     <li class="li_nav">

@@ -232,7 +232,7 @@ Route::get('/prodotti', function(){
         "footer_link" => $footer_link
         ]
     );
-})->name('tutti i prodotti');
+})->name('i_prodotti');
 
 Route::get('/news', function(){
     $footer_link = [
@@ -267,4 +267,4 @@ Route::get('/news', function(){
         "footer_link" => $footer_link
         ]
     );
-})->name('le news');;
+})->name('le_news');;

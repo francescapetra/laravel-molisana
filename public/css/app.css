@@ -116,7 +116,6 @@ footer {
   .footer_main {
     flex-wrap: wrap;
     width: 100%;
-    margin: 10px;
   }
 }
 .footer_main .column {

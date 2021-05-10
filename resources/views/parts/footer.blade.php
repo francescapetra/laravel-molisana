@@ -1,7 +1,7 @@
 <footer>
    <div class="footer_main container_small">
         <div class="column">
-            <div class="logo">
+            <div class="logo_footer">
                 <a href=""><img class="logo_nav" src="{{ asset('img/marchio-sito-test.png') }}" alt="logo_molisana"></a>
             </div>
             <p class="society">Ragione sociale: La Molisana S.P.A.</p> 

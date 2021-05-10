@@ -20,6 +20,12 @@ h2{
         width: calc((100% / 3) - 20px );
         margin: 10px;
         background-color: black;
+        @media screen and (max-width: 768px){
+            width: calc((100% / 2) - 20px );
+        }
+        @media screen and (max-width: 420px){
+            width: 100%;
+        }
         img{
             display:block;
             width: 100%;

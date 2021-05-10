@@ -21,7 +21,10 @@
     .p_product{
        font-size: $font_24;
        width: 95%;
-       margin-left: 15px;
+       @media screen and (max-width: 768px){
+            width: 100%;
+            font-size:$font_18;
+        }
     }
 }
 i.arrow{

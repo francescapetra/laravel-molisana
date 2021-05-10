@@ -149,7 +149,10 @@ Route::get('/home', function () {
     $cortissima = [];
 
 
-    foreach ($data as $pasta ) {
+    foreach ($data as $key => $pasta ) {
+
+        $pasta['id'] = $key;
+
         if ($pasta['tipo'] == 'lunga') {
             $lunga[] = $pasta;
         }elseif ($pasta['tipo'] == 'corta') {
@@ -359,8 +362,8 @@ Route::get('prodotto/{id}',function ($id) {
         'pasta'=> $pasta,
         "footer_link" => $footer_link
     ]);
-})->where('id', '[0-11]+')->name('prodotto');
-
+})->name('prodotto');
+// ->where('id', '[0-11]+')
 
 
 Route::get('/prodotti', function(){

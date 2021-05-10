@@ -10,13 +10,13 @@
                 {{-- loop per first element --}}
                    {{-- @if ($loop -> first) --}}
                     <li class=" li_nav">
-                      <a class="link_nav active" href={{route('homepage')}}>Home</a> 
+                      <a class="{{Route::getCurrentRoute()->getName()== 'homepage' ? 'active': ''}}" href={{route('homepage')}}>Home</a> 
                     </li> 
                     <li class="li_nav">
-                      <a class="link_nav" href={{route('i_prodotti')}}>Prodotti</a> 
+                      <a class="{{Route::getCurrentRoute()->getName()== 'i_prodotti' ? 'active': ''}}" href={{route('i_prodotti')}}>Prodotti</a> 
                     </li> 
                      <li class="li_nav">
-                      <a class="link_nav " href={{route('le_news')}}>News</a> 
+                      <a class="{{Route::getCurrentRoute()->getName()== 'le_news' ? 'active': ''}}" href={{route('le_news')}}>News</a> 
                     </li>  
                     {{-- @else
                     <li class="li_nav">

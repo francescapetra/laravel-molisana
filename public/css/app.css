@@ -41,7 +41,7 @@ nav ul {
 nav ul li {
   padding: 15px 1px;
 }
-nav ul li .link_nav {
+nav ul li a {
   background-color: #fff;
   text-decoration: none;
   color: #000;

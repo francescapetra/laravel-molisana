@@ -7,8 +7,7 @@ footer{
     display : flex;
      @media screen and (max-width: 768px){
             flex-wrap: wrap;
-            width: 100%;
-            
+            width: 100%;  
         }
     .column{
         width: 30%;
@@ -24,7 +23,6 @@ footer{
         img{
             width: 100%;
         }
-        
     }
     .wrapper_link{
         width: 70%;
@@ -32,7 +30,6 @@ footer{
         display: flex;
         flex-wrap: wrap;
         justify-content:space-between;
-    
         .section_link{
             width: 50%;  
                @media screen and (max-width: 768px){

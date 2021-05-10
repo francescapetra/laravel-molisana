@@ -148,3 +148,26 @@ h3.footer_title {
   line-height: 2;
   font-weight: 400;
 }
+
+.product {
+  background-color: #b7dae5;
+  padding: 40px 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.product_wrapper {
+  width: 80%;
+  color: #002d73;
+  font-weight: 600;
+}
+.product_wrapper .title_product {
+  text-align: center;
+}
+.product_wrapper .img_product {
+  width: 100%;
+}
+.product_wrapper .p_product {
+  font-size: 22px;
+}

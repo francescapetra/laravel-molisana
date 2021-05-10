@@ -1,0 +1,22 @@
+.product{
+    background-color: $prod_col;
+    padding: 40px 0;
+    width: 100%;
+    display: flex;
+    justify-content:center;
+    
+}
+.product_wrapper{
+    width: 80%;
+    color: $blue_col;
+    font-weight: 600;
+    .title_product{
+        text-align: center;
+    }
+    .img_product{
+        width: 100%;
+    }
+    .p_product{
+       font-size: $font_22;
+    }
+}

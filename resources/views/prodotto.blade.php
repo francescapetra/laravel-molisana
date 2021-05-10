@@ -4,8 +4,14 @@
     Prodotto Unico | Sito Uficiale
 @endsection
 
+@section('fontawesome')
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+@endsection
+
 @section('content')
+    
     <div class="product">
+        <i class=" arrow fas fa-chevron-left"></i>
         <div class="product_wrapper">
            <h1 class="title_product">{{$pasta ['titolo']}}</h1>
         <img class="img_product" src="{{$pasta['src-h']}}" alt="{{$pasta ['titolo']}}">
@@ -14,5 +20,7 @@
             {!! $pasta['descrizione'] !!}
         </p> 
         </div> 
+        <i class=" arrow fas fa-chevron-right"></i>
     </div>
+    
 @endsection

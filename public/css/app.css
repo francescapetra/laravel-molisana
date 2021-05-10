@@ -154,13 +154,15 @@ h3.footer_title {
   padding: 40px 0;
   width: 100%;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .product_wrapper {
   width: 80%;
   color: #002d73;
   font-weight: 600;
+  vertical-align: middle;
 }
 .product_wrapper .title_product {
   text-align: center;
@@ -171,4 +173,14 @@ h3.footer_title {
 .product_wrapper .p_product {
   font-size: 24px;
   width: 95%;
+  margin-left: 15px;
+}
+
+i.arrow {
+  background-color: #dcedf2;
+  font-size: 40px;
+  height: 60px;
+  padding: 10px 5px;
+  color: #fff;
+  cursor: pointer;
 }

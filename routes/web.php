@@ -328,6 +328,10 @@ Route::get('prodotto/{id}',function ($id) {
         ]
     ];
 
+    if ($id>= count($data)) {
+        abort(404);
+    }
+
     $footer_link = [
         "Pastificio" => [
             "Il Pastificio",

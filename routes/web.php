@@ -21,7 +21,7 @@ Route::get('/home', function () {
         "News"
     ];
     
-    $data = config('paste');
+    $data = config('paste.data');
 
     $lunga = [];
     $corta = [];
@@ -41,33 +41,7 @@ Route::get('/home', function () {
         }
     };
 
-    $footer_link = [
-        "Pastificio" => [
-            "Il Pastificio",
-            "Grano decorticato a pietra",
-            "Il Molise c’è",
-            "Filiera Integrata",
-            "100 anni di pasta",
-            "Sartoria della pasta",
-            "Spaghetto Quadrato",
-            "Le Persone",
-        ],
-        "Collezione da chef" => [
-            "Collezione da Chef",
-            "Grandi Cucine",
-            "Biologiche",
-            "Quadrate",
-        ],
-        "Prodotti" => [
-            "Le Classiche",
-            "Le Integrali",
-            "Le Speciali",
-            "Le Biologiche",
-            "Le Gluten-Free",
-            "Le Semole",
-            "Le Extra di Lusso",
-        ], 
-    ];
+    $footer_link = config('link_footer.footer_link');
 
     return view('home', 
         [
@@ -84,7 +58,7 @@ Route::get('/home', function () {
 
 Route::get('prodotto/{id}',function ($id) {
 
-    $data = config('paste');
+    $data = config('paste.data');
 
     if ($id>= count($data)) {
         abort(404);
@@ -101,33 +75,7 @@ Route::get('prodotto/{id}',function ($id) {
        $next = $id + 1; 
     }
 
-    $footer_link = [
-        "Pastificio" => [
-            "Il Pastificio",
-            "Grano decorticato a pietra",
-            "Il Molise c’è",
-            "Filiera Integrata",
-            "100 anni di pasta",
-            "Sartoria della pasta",
-            "Spaghetto Quadrato",
-            "Le Persone",
-        ],
-        "Collezione da chef" => [
-            "Collezione da Chef",
-            "Grandi Cucine",
-            "Biologiche",
-            "Quadrate",
-        ],
-        "Prodotti" => [
-            "Le Classiche",
-            "Le Integrali",
-            "Le Speciali",
-            "Le Biologiche",
-            "Le Gluten-Free",
-            "Le Semole",
-            "Le Extra di Lusso",
-        ], 
-    ];
+    $footer_link = config('link_footer.footer_link');
 
     $pasta = $data[$id];
 
@@ -141,33 +89,9 @@ Route::get('prodotto/{id}',function ($id) {
 
 
 Route::get('/prodotti', function(){
-    $footer_link = [
-        "Pastificio" => [
-            "Il Pastificio",
-            "Grano decorticato a pietra",
-            "Il Molise c’è",
-            "Filiera Integrata",
-            "100 anni di pasta",
-            "Sartoria della pasta",
-            "Spaghetto Quadrato",
-            "Le Persone",
-        ],
-        "Collezione da chef" => [
-            "Collezione da Chef",
-            "Grandi Cucine",
-            "Biologiche",
-            "Quadrate",
-        ],
-        "Prodotti" => [
-            "Le Classiche",
-            "Le Integrali",
-            "Le Speciali",
-            "Le Biologiche",
-            "Le Gluten-Free",
-            "Le Semole",
-            "Le Extra di Lusso",
-        ], 
-    ];
+    
+    $footer_link = config('link_footer.footer_link');
+
     return view('prodotti',
         [
        
@@ -179,33 +103,9 @@ Route::get('/prodotti', function(){
 
 
 Route::get('/news', function(){
-    $footer_link = [
-        "Pastificio" => [
-            "Il Pastificio",
-            "Grano decorticato a pietra",
-            "Il Molise c’è",
-            "Filiera Integrata",
-            "100 anni di pasta",
-            "Sartoria della pasta",
-            "Spaghetto Quadrato",
-            "Le Persone",
-        ],
-        "Collezione da chef" => [
-            "Collezione da Chef",
-            "Grandi Cucine",
-            "Biologiche",
-            "Quadrate",
-        ],
-        "Prodotti" => [
-            "Le Classiche",
-            "Le Integrali",
-            "Le Speciali",
-            "Le Biologiche",
-            "Le Gluten-Free",
-            "Le Semole",
-            "Le Extra di Lusso",
-        ], 
-    ];
+
+    $footer_link = config('link_footer.footer_link');
+
     return view('news',
          [
         "footer_link" => $footer_link

@@ -15,12 +15,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/home', function () {
 
-    $menu_link = [
-        "Home",
-        "Prodotti",
-        "News"
-    ];
-    
+    $menu_link = config('menu.menu_link');
     $data = config('paste.data');
 
     $lunga = [];
@@ -76,12 +71,14 @@ Route::get('prodotto/{id}',function ($id) {
     }
 
     $footer_link = config('link_footer.footer_link');
+    $menu_link = config('menu.menu_link');
 
     $pasta = $data[$id];
 
     return view('prodotto', [
         'pasta'=> $pasta,
-        "footer_link" => $footer_link,
+        'footer_link' => $footer_link,
+        'menu_link'=> $menu_link,
         'prevProdottoId' => $prev,
         'nextProdottoId' => $next
     ]);
@@ -91,10 +88,11 @@ Route::get('prodotto/{id}',function ($id) {
 Route::get('/prodotti', function(){
     
     $footer_link = config('link_footer.footer_link');
+    $menu_link = config('menu.menu_link');
 
     return view('prodotti',
         [
-       
+        'menu_link'=> $menu_link,  
         "footer_link" => $footer_link
         ]
     );
@@ -105,10 +103,12 @@ Route::get('/prodotti', function(){
 Route::get('/news', function(){
 
     $footer_link = config('link_footer.footer_link');
+    $menu_link = config('menu.menu_link');
 
     return view('news',
          [
-        "footer_link" => $footer_link
+        "footer_link" => $footer_link,
+        'menu_link'=> $menu_link,
         ]
     );
 })->name('le_news');;

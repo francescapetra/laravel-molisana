@@ -42,18 +42,18 @@ nav ul li {
   padding: 15px 1px;
 }
 nav ul li a {
-  background-color: #fff;
   text-decoration: none;
   color: #000;
   font-size: 22px;
   font-weight: 600;
   padding: 15px;
 }
-nav ul li .active {
+
+a.link_nav:focus {
   background-color: #b2e5fc;
 }
 
-a.link_nav:focus {
+.active {
   background-color: #b2e5fc;
 }
 

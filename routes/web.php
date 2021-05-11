@@ -51,7 +51,7 @@ Route::get('/home', function () {
 })->name('homepage');
 
 
-Route::get('prodotto/{id}',function ($id) {
+Route::get('prodotto/{id?}',function ($id = 1) {
 
     $data = config('paste.data');
 
@@ -86,7 +86,6 @@ Route::get('prodotto/{id}',function ($id) {
 
 
 Route::get('/prodotti', function(){
-    
     $footer_link = config('link_footer.footer_link');
     $menu_link = config('menu.menu_link');
 
@@ -97,7 +96,6 @@ Route::get('/prodotti', function(){
         ]
     );
 })->name('i_prodotti');
-
 
 
 Route::get('/news', function(){

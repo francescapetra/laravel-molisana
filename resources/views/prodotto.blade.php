@@ -11,7 +11,9 @@
 @section('content')
     
     <div class="product">
-        <i class=" arrow fas fa-chevron-left"></i>
+        <a href="{{route('prodotto',['id' => $prevProdottoId])}}">
+            <i class=" arrow fas fa-chevron-left"></i>
+        </a>
         <div class="product_wrapper">
            <h1 class="title_product">{{$pasta ['titolo']}}</h1>
         <img class="img_product" src="{{$pasta['src-h']}}" alt="{{$pasta ['titolo']}}">
@@ -20,7 +22,9 @@
             {!! $pasta['descrizione'] !!}
         </p> 
         </div> 
-        <i class=" arrow fas fa-chevron-right"></i>
+        <a href="{{route('prodotto',['id' => $nextProdottoId])}}">
+            <i class=" arrow fas fa-chevron-right"></i>
+        </a>
     </div>
     
 @endsection

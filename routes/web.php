@@ -90,6 +90,17 @@ Route::get('prodotto/{id}',function ($id) {
         abort(404);
     }
 
+    if ($id == count($data) -1) {
+        $next = 0;
+        $prev = $id - 1;
+    }elseif ($id == 0) {
+        $prev = count($data) - 1;
+        $next = $id +1;
+    }else{
+       $prev = $id - 1;
+       $next = $id + 1; 
+    }
+
     $footer_link = [
         "Pastificio" => [
             "Il Pastificio",
@@ -122,7 +133,9 @@ Route::get('prodotto/{id}',function ($id) {
 
     return view('prodotto', [
         'pasta'=> $pasta,
-        "footer_link" => $footer_link
+        "footer_link" => $footer_link,
+        'prevProdottoId' => $prev,
+        'nextProdottoId' => $next
     ]);
 })->where('id', '[0-9]+')->name('prodotto');
 
